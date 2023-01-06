@@ -1,0 +1,31 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.container{
+	&__inner{
+		background-color: #fff;
+	}
+}
+.header-top{
+	width: 100%;
+	height: 48px;
+	background: linear-gradient(#ff8331, #ff6626);
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+
+	}
+}
+.navigation{
+	&__list{
+		display: flex;
+		
+	}
+}
+
+
+
+@import 'media';
+
