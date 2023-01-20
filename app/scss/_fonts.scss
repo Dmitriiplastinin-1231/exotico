@@ -1,0 +1,90 @@
+@font-face {
+	font-family: 'FredokaOne-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: local('FredokaOne-Regular'),
+		url('../fonts/FredokaOne-Regular.woff2') format('woff2'),
+		url('../fonts/FredokaOne-Regular.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PTSerif-Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: local('PTSerif-Bold'),
+		url('../fonts/PTSerif-Bold.woff2') format('woff2'),
+		url('../fonts/PTSerif-Bold.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PTSerif-Italic';
+	font-style: italic;
+	font-weight: 400;
+	src: local('PTSerif-Italic'),
+		url('../fonts/PTSerif-Italic.woff2') format('woff2'),
+		url('../fonts/PTSerif-Italic.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PTSerif-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PTSerif-Regular'),
+		url('../fonts/PTSerif-Regular.woff2') format('woff2'),
+		url('../fonts/PTSerif-Regular.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Quicksand-Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Quicksand-Bold'),
+		url('../fonts/Quicksand-Bold.woff2') format('woff2'),
+		url('../fonts/Quicksand-Bold.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Quicksand-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Quicksand-Regular'),
+		url('../fonts/Quicksand-Regular.woff2') format('woff2'),
+		url('../fonts/Quicksand-Regular.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway-Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Raleway-Bold'),
+		url('../fonts/Raleway-Bold.woff2') format('woff2'),
+		url('../fonts/Raleway-Bold.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway-Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Raleway-Medium'),
+		url('../fonts/Raleway-Medium.woff2') format('woff2'),
+		url('../fonts/Raleway-Medium.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Raleway-Regular'),
+		url('../fonts/Raleway-Regular.woff2') format('woff2'),
+		url('../fonts/Raleway-Regular.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway-SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Raleway-SemiBold'),
+		url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+		url('../fonts/Raleway-SemiBold.woff') format('woff');
+	font-display: swap;
+}

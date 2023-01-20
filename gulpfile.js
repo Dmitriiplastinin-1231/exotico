@@ -30,6 +30,7 @@ function styles() {
 
 
 
+
 function cleanDist() {
 	return del('dist')
 }

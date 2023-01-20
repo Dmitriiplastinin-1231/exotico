@@ -1,17 +1,31 @@
 $yellow: #ffea00;
 $white: #fff;
 $orange: #ff742b;
-
+$gray: #7b7a79;
+$green: #4ba321;
 
 %fredoka-400{
-	font-family: 'Fredoka One', cursive;
+	font-family: 'FredokaOne-Regular', cursive;
 	font-weight: 400;
 }
 %relaway-500{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Medium', sans-serif;
 	font-weight: 500;
 }
 %ptserif-400{
-	font-family: 'PT Serif', serif;
+	font-family: 'PTSerif-Regular', serif;
+	font-weight: 400;
+}
+%ptserif-400i{
+	font-family: 'PTSerif-Italic', serif;
+	font-weight: 400;
+	
+}
+%quicksand-700{
+	font-family: 'Quicksand-Bold', serif;
+	font-weight: 700;
+}
+%fredokaone-400{
+	font-family: 'FredokaOne-Regular', serif;
 	font-weight: 400;
 }
