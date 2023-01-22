@@ -204,11 +204,136 @@
 }
 
 
+.footer-top{
+	margin-bottom: 80px;
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item-title{
+		color: $orange;
+		@extend %fredokaone-400;
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 18px;
+	}
+	&__list-item{
+		@extend %raleway-400;
+		font-size: 11px;
+		margin-bottom: 11px;
+
+	}
+	&__item-link,
+	.footer-top__tel-link,
+	.footer-top__mail-link,
+	.footer-top__place{
+		color: $gray;
+	}
+	&__tel{
+		@extend %quicksand-700;
+		font-size: 29px;
+		margin-bottom: 13px;
+		margin-top: -17px;
+		span{
+			@extend %quicksand-400;
+		}
+	}
+	&__mail{
+		@extend %raleway-400;
+		font-size: 12px;
+		margin-bottom: 13px;
+	}
+	&__place{
+		@extend %raleway-600;
+		font-size: 15px;
+		span{
+			@extend %raleway-700;
+		}
+	}
+}
+.twits{
+	&__title{
+		font-size: 19px;
+		@extend %fredokaone-400;
+		color: $blue;
+		margin-bottom: 20px;
+	}
+	&__inner{
+		margin-bottom: 8px;
+		@extend %ptserif-400i;
+	}
+	&__info{
+		display: flex;
+		font-size: 11px;
+	}
+	&__authore{
+		color: $blue;
+		@extend %raleway-700;
+	}
+	&__date{
+		color: $gray;
+		@extend %raleway-400;
+		margin-left: 2px;
+	}
+}
+
+.footer-bottom{
+	background-image: url(../images/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 35px 0 55px;
+	color: $white;
+	&__menu{
+		display: flex;
+		justify-content: center;
+		padding: 0 0 35px;
+		border-bottom: 1px dashed rgba(255, 255, 255, .4);
+		margin-bottom: 50px;
 
 
+	}
+	&__menu-item{
+		padding: 0 25px;
+		position: relative;
 
+	}
+	&__menu-item + .footer-bottom__menu-item::before{
+		content: '';
+		position: absolute;
+		width: 3px;
+		height: 3px;
+		background-color: $white;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__inner{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__social{
+		display: flex;
+	}
 
+	&__social-item{
+		margin-top: 2px;
+		&:hover{
+			margin-top: 0;
+			margin-bottom: 2px;
+		}
+	}
+	&__social-item + .footer-bottom__social-item{
+		margin-left: 8px;
+	}
+	&__social-img{
+		border-radius: 50%;
+	}
+	&__copyright{
+		margin-left: 35px;
 
+	}
+}
 
 
 

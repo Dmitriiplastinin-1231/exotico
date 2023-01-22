@@ -3,14 +3,27 @@ $white: #fff;
 $orange: #ff742b;
 $gray: #7b7a79;
 $green: #4ba321;
+$blue: #5ad2ff;
 
 %fredoka-400{
 	font-family: 'FredokaOne-Regular', cursive;
 	font-weight: 400;
 }
-%relaway-500{
+%raleway-400{
+	font-family: 'Raleway-Regular', serif;
+	font-weight: 400;
+}
+%raleway-500{
 	font-family: 'Raleway-Medium', sans-serif;
 	font-weight: 500;
+}
+%raleway-600{
+	font-family: 'Raleway-SemiBold', sans-serif;
+	font-weight: 600;
+}
+%raleway-700{
+	font-family: 'Raleway-Bold', sans-serif;
+	font-weight: 700;
 }
 %ptserif-400{
 	font-family: 'PTSerif-Regular', serif;
@@ -19,7 +32,10 @@ $green: #4ba321;
 %ptserif-400i{
 	font-family: 'PTSerif-Italic', serif;
 	font-weight: 400;
-	
+}
+%quicksand-400{
+	font-family: 'Quicksand-Regular', serif;
+	font-weight: 400;
 }
 %quicksand-700{
 	font-family: 'Quicksand-Bold', serif;

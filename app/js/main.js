@@ -3,16 +3,12 @@ const headerSliderDInner = document.querySelector('.header-bottom .slider__dots'
 
 for (let i = 0; i < headerSliderSlides.length; i++){
 	const dot = document.createElement('div');
-	console.log(dot)
 	dot.classList.add('slider__dot');
 	if (i === 0){
 		dot.classList.add('active')
 	}
 	headerSliderDInner.append(dot);
-
 }
-
-
 
 const headerSliderDots = document.querySelectorAll('.header .slider__dots .slider__dot');
 
