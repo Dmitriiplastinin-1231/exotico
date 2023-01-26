@@ -4,6 +4,7 @@ $orange: #ff742b;
 $gray: #7b7a79;
 $green: #4ba321;
 $blue: #5ad2ff;
+$brown: #a07258;
 
 %fredoka-400{
 	font-family: 'FredokaOne-Regular', cursive;
@@ -32,6 +33,10 @@ $blue: #5ad2ff;
 %ptserif-400i{
 	font-family: 'PTSerif-Italic', serif;
 	font-weight: 400;
+}
+%ptserif-700{
+	font-family: 'PTSerif-Bold', serif;
+	font-weight: 700;
 }
 %quicksand-400{
 	font-family: 'Quicksand-Regular', serif;

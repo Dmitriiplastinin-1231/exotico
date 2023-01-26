@@ -58,6 +58,7 @@
 		background-color: $white;
 		min-width: 130px;
 		padding: 35px 20px 4px;
+		z-index: 11;
 		&::before{
 			content: '';
 			position: absolute;
@@ -205,7 +206,10 @@
 
 
 .footer-top{
-	margin-bottom: 80px;
+	padding-top: 65px;
+	padding-bottom: 80px;
+	position: relative;
+	overflow: hidden;
 	&__inner{
 		display: flex;
 		justify-content: space-between;
@@ -249,6 +253,15 @@
 		span{
 			@extend %raleway-700;
 		}
+	}
+	&__bg{
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translateX(50%);
+	}
+	.wrapper{
+		position: relative;
 	}
 }
 .twits{
@@ -335,8 +348,137 @@
 	}
 }
 
+.about{
+	text-align: center;
+	color: $brown;
+	&__title{
+		font-size: 54px;
+		padding: 0 15px 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $brown;
+		display: inline-block;
+	}
+	&__text{
+		font-size: 23px;
+		max-width: 880px;
+		margin: 0 auto 23px;
+	}
+	&__subtext{
+		font-size: 12px;
+		margin-bottom: 60px;
+	}
+	&__form{
+		display: flex;
+		margin-bottom: 66px;
+	}
+
+	&__input,
+	&__btn{
+		height: 75px;
+	}
+
+	&__input{
+		border: 2px solid $yellow;
+		border-right: none;
+		width: 100%;
+		@extend %ptserif-400;
+		outline: transparent;
+		font-size: 22px;
+		padding: 0 25px;
+	}
+	&__btn{
+		width: 180px;
+		background: linear-gradient(#ff8331, #ff6626);
+		border: none;
+		color: $white;
+		@extend %fredokaone-400;
+		font-size: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__btn-icon{
+		display: inline-block;
+		margin-left: 10px;
+	}
+	&__inner{
+		display: flex;
+		text-align: left;
+		height: 346px;
+	}
+	&__popup{
+		flex: 0 0 50%;
+		max-width: 50%;
+		height: 100%;
+	}
+	&__popup-btninner{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__popup-btn{
+		background-color: transparent;
+		display: flex;
+		border: none;
+		cursor: pointer;
+		align-items: center;
+		text-align: left;
+	}
+	&__popup-descr{
+		margin-left: 20px;
+		color: $white;
+	}
+	&__popup-title{
+		@extend %fredokaone-400;
+		font-size: 33px;
+	}
+	&__popup-text{
+		@extend %raleway-400;
+		font-size: 12px;
+	}
+	&__popup-video{
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, .8);
+		justify-content: center;
+		align-items: center;
+		z-index: 15;
+		display: none;
+		cursor: pointer;
+	}
 
 
+
+
+	&__person{
+		flex: 0 0 50%;
+		max-width: 50%;
+		color: $white;
+		padding-left: 55px;
+		padding-top: 55px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__person-title{
+		font-size: 24px;
+		@extend %ptserif-700;
+	}
+	&__person-profession{
+		font-size: 12px;
+		@extend %raleway-400;
+		color: #b8ece8;
+		margin-bottom: 8px;
+	}
+	&__person-text{
+		@extend %ptserif-400i;
+		max-width: 220px;
+		line-height: 24px;
+	}
+}
 
 
 
