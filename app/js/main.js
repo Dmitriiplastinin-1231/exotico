@@ -1,7 +1,6 @@
 // header-slider
 
 const headerSliderSlides = document.getElementsByClassName('slider__item');
-console.log(document.querySelector('.about__popup-title').parentNode)
 const headerSliderDInner = document.querySelector('.header-bottom .slider__dots');
 
 for (let i = 0; i < headerSliderSlides.length; i++){
@@ -25,8 +24,8 @@ for(const dot of headerSliderDots){
 }
 
 setInterval(()=>{
-	let index = 0
-	let inend
+	let index = 0;
+	let inend;
 	headerSliderDots.forEach((item) => {
 		if (item.classList.contains('active')){
 
@@ -73,10 +72,80 @@ popupmodul.addEventListener('click', () => {
 })
 
 
+//
+
+const productCategoryBtn = document.querySelector('.product__sort > span');
+const productCategoryList = document.querySelector('.product__sort');
+
+productCategoryBtn.addEventListener('click', () => {
+	productCategoryList.classList.toggle('product__sort--active');
+})
+
+
+//product section slider
+
+const productSliderInner = document.querySelector('.product__bottom-inner');
+const productSliderBtns = document.querySelectorAll('.product__slider-arrow');
+const productSlides = document.querySelectorAll('.product__bottom-item');
+let productSliderNum = 0;
 
 
 
 
+productSliderBtns[0].addEventListener('click', ()=>{
+	if (productSliderNum > 0){
+		--productSliderNum;
+	}
+	productFlipping();
+})
+productSliderBtns[1].addEventListener('click', ()=>{
+	const productSlideCount = productSliderInner.clientWidth / productSlides[0].clientWidth;
+	let productSlidesAShow = 0;
+	productSlides.forEach((item) => {
+		if (item.classList.contains('product__bottom-item--hide')){
+			productSlidesAShow++;
+		}
+	});
+	if (productSliderNum + productSlideCount < productSlides.length - 1 - productSlidesAShow){
+		++productSliderNum;
+	}
+	productFlipping()
+})
+
+function productFlipping(){
+	productSliderInner.style.transform = `translateX(-${productSliderNum * productSlides[0].clientWidth}px)`
+}
+
+
+//product sort
+
+const productSortBtn = document.querySelectorAll('.product__sort-categorybtn');
+const productSortItems = document.querySelectorAll('.product__bottom-item');
+
+
+
+function productFilter(category, items){
+	items.forEach((item) => {
+		const productSortСoincidence = !item.classList.contains(`product__bottom-${category.toLowerCase()}`);
+		const productSortShowAll = category.toLowerCase() === 'all';
+		if (productSortСoincidence && !productSortShowAll){
+			productSliderNum = 0;
+			productFlipping();
+			item.classList.add('product__bottom-item--hide');
+		}else{
+			item.classList.remove('product__bottom-item--hide');
+		}
+	})
+
+}
+
+
+productSortBtn.forEach((btn)=>{
+	btn.addEventListener('click',()=>{
+
+		productFilter(btn.dataset.productFilter, productSortItems);
+	})
+})
 
 
 
