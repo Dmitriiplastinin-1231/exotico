@@ -647,6 +647,53 @@
 }
 
 
+.experience{
+	height: 515px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(../images/content/experience/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+  	color: $white;
+	&__title{
+		padding: 0 0 25px 10px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid rgba(255, 255, 255, .5);
+		font-size: 43px;
+		@extend %fredokaone-400;
+  		letter-spacing: 26px;
+	}
+	&__text{
+		@extend %ptserif-400;
+		font-size: 24px;
+		max-width: 660px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	&__link{
+		padding: 10px 24px 10px 17px;
+		background-color: $white;
+		border-radius: 20px;
+		color: $orange;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 4px;
+			height: 5px;
+			background-image: url(../images/icons/chevron.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			right: 17px;
+			top: 50%;
+			transform: translateY(-25%);
+		}
+	}
+}
+
+
 
 @keyframes listOnAnimation{
 	from{
