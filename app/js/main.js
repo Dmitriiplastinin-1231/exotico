@@ -148,6 +148,54 @@ productSortBtn.forEach((btn)=>{
 })
 
 
+//blog slider and info switch
+
+const blogSliderInner = document.querySelector('.blog-slider__inner');
+const blogPersonItems = document.querySelectorAll('.blog-info__people-item')
+const blogPersonInfo = document.querySelectorAll('.blog-info__item');
+const blogSliderBtns = document.querySelectorAll('.blog-slider__arrow');
+let blogSlideCounter = 0;
+
+
+
+blogSliderBtns[0].addEventListener('click', ()=>{
+	if (blogSlideCounter > 0){
+		blogSlideCounter--;
+	}
+	blogSlidesFlipping(blogSlideCounter, blogPersonItems[0].clientWidth);
+})
+
+
+blogASlides = blogSliderInner.clientWidth / blogPersonItems[0].clientWidth;
+
+blogSliderBtns[1].addEventListener('click', ()=>{
+	if (blogSlideCounter < blogPersonItems.length - blogASlides){
+		blogSlideCounter++;
+	}
+	blogSlidesFlipping(blogSlideCounter, blogPersonItems[0].clientWidth);
+})
+
+
+function blogSlidesFlipping(num, width){
+
+	blogSliderInner.style.transform=`translateX(-${num * width}px)`
+}
+
+let blogPErsonNum = 0;
+blogPersonItems.forEach((item)=>{
+	item.num = blogPErsonNum;
+	blogPErsonNum++;
+	item.addEventListener('click', ()=>{
+		clearActiveClass(blogPersonItems);
+		clearActiveClass(blogPersonInfo);
+		item.classList.add('active');
+		blogPersonInfo[item.num].classList.add('active');
+	})
+})
+
+
+
+
 
 function clearActiveClass(list) {
 	list.forEach((item) => {
