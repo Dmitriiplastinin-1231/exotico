@@ -25,6 +25,13 @@
 }
 .navigation{
 	flex-grow: .8;
+	&__btn{
+		border: none;
+		background-color: transparent;
+		display: none;
+		margin-left: 10px;
+		cursor: pointer;
+	}
 	&__list{
 		display: flex;
 		align-items: center;
@@ -140,7 +147,6 @@
 }
 
 .header-bottom{
-
 	&__product{
 		position: relative;
 		display: inline-block;
@@ -210,12 +216,17 @@
 
 .footer-top{
 	padding-top: 65px;
-	padding-bottom: 80px;
+	padding-bottom: 60px;
 	position: relative;
 	overflow: hidden;
 	&__inner{
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__item{
+		padding: 0 15px;
+		margin-bottom: 20px;
 	}
 	&__item-title{
 		color: $orange;
@@ -308,7 +319,7 @@
 		padding: 0 0 35px;
 		border-bottom: 1px dashed rgba(255, 255, 255, .4);
 		margin-bottom: 50px;
-
+		flex-wrap: wrap;
 
 	}
 	&__menu-item{
@@ -970,9 +981,10 @@
 
 .category{
 	display: flex;
-
+	flex-wrap: wrap;
+	justify-content: center;
 	&__item{
-		width: 33.33%;
+		width: 313.3px;
 		height: 235px;
 		background-repeat: no-repeat;
 		background-size: cover;
